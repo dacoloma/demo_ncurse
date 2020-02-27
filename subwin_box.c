@@ -12,11 +12,11 @@ int main(int argc, char *argv[])
 
 	initscr();
 	curs_set(FALSE);
-	border_box = subwin(stdscr, 10, 10, LINES / 2, COLS / 2);
-	wborder(border_box, '|', '|', '-', '-', '+', '+', '+', '+');
+	// border_box = subwin(stdscr, 10, 10, LINES / 2, COLS / 2);
+	// wborder(border_box, '|', '|', '-', '-', '+', '+', '+', '+');
 	//box(border_box, ACS_VLINE, ACS_HLINE);
  
-/*	left = subwin(stdscr, LINES, COLS / 2, 0, 0);
+	left = subwin(stdscr, LINES, COLS / 2, 0, 0);
 	right = subwin(stdscr, LINES, COLS / 2, 0, COLS / 2);
 	
 	box(left, ACS_VLINE, ACS_HLINE);
@@ -33,10 +33,10 @@ int main(int argc, char *argv[])
 	
 	getch();
 	endwin(); // Restore normal terminal behavior
-*/
-	refresh();
-	getch();
-	endwin(); // Restore normal terminal behavior
+
+	// refresh();
+	// getch();
+	// endwin(); // Restore normal terminal behavior
 
 	return (0);
 }
